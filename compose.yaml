@@ -1,0 +1,15 @@
+---
+services:
+  mkdocs:
+    image: squidfunk/mkdocs-material:9.7.5
+    container_name: mkdocs
+    working_dir: /docs
+    command: serve --dev-addr=0.0.0.0:8000
+    networks:
+     - traefik
+    volumes:
+      - ./site:/docs
+    restart: unless-stopped
+networks:
+  traefik:
+    external: true

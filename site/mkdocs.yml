@@ -1,0 +1,9 @@
+site_name: Stencil Dev
+site_description: Personal infrastructure portfolio and technical notes
+site_url: https://dstencil.com
+
+theme:
+  name: material
+
+nav:
+  - Home: index.md
