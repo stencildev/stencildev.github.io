@@ -13,6 +13,29 @@ It functions as a personal platform for testing deployment patterns and operatio
 - **CI/CD:** GitHub Actions
 - **Hosting:** GitHub Pages for public content
 
+## Architecture Overview
+
+```mermaid
+flowchart TD
+    A[Proxmox Host]
+
+    A --> B[Docker Host]
+    B --> C[Traefik]
+    B --> D[Technitium DNS]
+    B --> E[Portainer]
+    B --> F[Glance Dashboard]
+    B --> G[Plex]
+    B --> H[Jellyfin]
+    B --> I[PeerTube]
+    B --> J[Arr Stack]
+    B --> K[Authentik]
+
+    L[GitHub Repository] --> M[GitHub Actions]
+    M --> N[GitHub Pages]
+    N --> O[dstencil.com]
+```
+[View full architecture diagram →](/homelab/architecture/)
+
 ## Development Workflow
 
 Infrastructure and documentation follow a Git-based workflow:

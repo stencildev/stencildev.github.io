@@ -2,6 +2,30 @@
 
 This site is built and published using a staged workflow that separates local development from public deployment.
 
+## Deployment Flow
+
+```mermaid
+flowchart TD
+    A[Edit on staging]
+    B[Preview locally in Docker]
+    C[Access through Traefik local domain]
+    D[Push staging branch]
+    E[Open pull request to main]
+    F[Merge to main]
+    G[GitHub Actions build and deploy]
+    H[GitHub Pages]
+    I[dstencil.com]
+
+    A --> B
+    B --> C
+    C --> D
+    D --> E
+    E --> F
+    F --> G
+    G --> H
+    H --> I
+```
+
 ## Local Development
 
 The site is developed locally inside a Docker container using MkDocs Material.
