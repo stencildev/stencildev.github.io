@@ -34,6 +34,9 @@ nav:
   - Homelab: 
       - Overview: homelab/index.md
       - Architecture: homelab/architecture.md
+      - Networking: homelab/networking.md
+      - DNS: homelab/dns.md
+      - Reverse Proxy: homelab/reverse-proxy.md
   - Notes: 
       - Overview: notes/index.md
       - Site Deployment Workflow: notes/site-deployment.md 
