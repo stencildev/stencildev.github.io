@@ -33,5 +33,5 @@ My work and homelab projects focus on building practical infrastructure patterns
 ## Explore
 
 - **[Homelab](/homelab/)** — infrastructure architecture and services  
-- **[Notes](/notes/)** — technical documentation and workflows  
+- **[Runbooks](/runbooks/)** — technical documentation and workflows  
 - **[Projects](/projects/)** — selected infrastructure work  
