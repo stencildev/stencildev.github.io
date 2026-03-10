@@ -4,6 +4,24 @@ site_url: https://dstencil.com
 
 theme:
   name: material
+  features:
+    - navigation.tabs
+  # Dark Mode
+  palette:
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to Light Mode
+      primary: black
+      accent: indigo
+
+  # Light Mode
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to Dark Mode
+      primary: black
+      accent: indigo
 
 nav:
   - Home: index.md
