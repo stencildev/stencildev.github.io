@@ -7,3 +7,8 @@ theme:
 
 nav:
   - Home: index.md
+  - About: about.md
+  - Projects: projects.md
+  - Homelab: homelab/index.md
+  - Notes: notes/index.md
+  - Contact: contact.md
