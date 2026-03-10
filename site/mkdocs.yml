@@ -37,9 +37,9 @@ nav:
       - Networking: homelab/networking.md
       - DNS: homelab/dns.md
       - Reverse Proxy: homelab/reverse-proxy.md
-  - Notes: 
-      - Overview: notes/index.md
-      - Site Deployment Workflow: notes/site-deployment.md 
+  - Runbooks: 
+      - Overview: runbooks/index.md
+      - Site Deployment Workflow: runbooks/site-deployment.md 
   - Contact: contact.md
 
 markdown_extensions:
