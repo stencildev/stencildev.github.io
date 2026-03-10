@@ -31,7 +31,9 @@ nav:
   - Home: index.md
   - About: about.md
   - Projects: projects.md
-  - Homelab: homelab/index.md
+  - Homelab: 
+      - Overview: homelab/index.md
+      - Architecture: homelab/architecture.md
   - Notes: 
       - Overview: notes/index.md
       - Site Deployment Workflow: notes/site-deployment.md 
