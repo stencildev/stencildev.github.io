@@ -19,6 +19,8 @@ Workflow:
 
 `staging → local preview → pull request → main → GitHub Actions build → GitHub Pages deploy`
 
+Detailed architecture and documentation can be found in the **[Site Deployment](/notes/site-deployment)** section of the site.
+
 ## Homelab Platform
 
 My homelab environment serves as a platform for experimenting with infrastructure design, service deployment, and operational workflows.
