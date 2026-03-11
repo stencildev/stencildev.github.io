@@ -1,47 +1,68 @@
 # Projects
 
-This page highlights selected infrastructure and documentation projects that demonstrate how I approach system design, troubleshooting, and operational workflows.
+This page highlights selected infrastructure and platform work from my homelab and personal experimentation.
 
----
-
-## Infrastructure Documentation Site
-
-This site itself is an infrastructure project.
-
-It was designed to create a repeatable workflow for developing, previewing, and publishing documentation.
-
-**Key elements**
-
-- MkDocs with the Material theme
-- Docker-based local development environment
-- Traefik reverse proxy for local access
-- Git branching workflow (`staging → main`)
-- GitHub Actions for automated builds
-- GitHub Pages for public hosting
-
-This workflow allows content to be tested locally before being promoted to production.
-
-See the **[Site Deployment Workflow](/runbooks/site-deployment)** page for details.
+These projects focus on practical infrastructure patterns, reproducible deployments, and operational design rather than one-off experiments.
 
 ---
 
 ## Homelab Infrastructure Platform
 
-My homelab acts as a personal platform for experimenting with infrastructure design and service deployment patterns.
+A continuously evolving environment used to experiment with infrastructure architecture, containerized services, and operational workflows.
 
-The environment includes:
+The homelab acts as a sandbox for testing deployment patterns and documenting reproducible infrastructure.
+
+**Key components**
 
 - Proxmox virtualization
-- Docker-based services
+- Docker and Docker Compose
 - Traefik reverse proxy
 - Technitium DNS
-- media and platform services
+- Git-based documentation workflows
+- internal service networking
 
-The homelab allows me to experiment with:
+**Focus areas**
 
-- service routing
-- DNS-based service discovery
-- network segmentation ideas
-- infrastructure documentation practices
+- reverse proxy architecture
+- internal DNS design
+- service routing and segmentation
+- operational documentation and runbooks
 
-More details can be found in the **[Homelab](/homelab/)** section of this site.
+[View Homelab Architecture →](/homelab/)
+
+---
+
+## Documentation-Driven Infrastructure
+
+This site itself is treated as a project.
+
+Infrastructure experiments, deployment workflows, and architectural decisions are documented as reproducible runbooks.
+
+The goal is to treat infrastructure documentation as part of the system rather than an afterthought.
+
+**Key elements**
+
+- MkDocs + Material theme
+- GitHub Pages hosting
+- GitHub Actions deployment pipeline
+- local preview environment using Docker
+- staged workflow using branches and pull requests
+
+[View Runbooks →](/runbooks/)
+
+---
+
+## Reverse Proxy Platform (Traefik)
+
+A centralized reverse proxy layer used to route traffic to internal services.
+
+The platform handles routing, TLS termination, and shared middleware while allowing backend services to remain isolated from direct exposure.
+
+**Capabilities**
+
+- hostname-based routing
+- TLS termination
+- internal service discovery
+- centralized access patterns
+
+[View Traefik Runbook →](/runbooks/traefik-deployment/)

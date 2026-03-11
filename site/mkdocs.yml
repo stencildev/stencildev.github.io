@@ -34,6 +34,7 @@ nav:
   - Homelab: 
       - Overview: homelab/index.md
       - Architecture: homelab/architecture.md
+      - Workflow: homelab/workflow.md
       - Networking: homelab/networking.md
       - DNS: homelab/dns.md
       - Reverse Proxy: homelab/reverse-proxy.md
@@ -66,6 +67,7 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.tasklist:
       custom_checkbox: true
+  - md_in_html
 
 extra:
   social:
