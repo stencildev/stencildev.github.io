@@ -10,13 +10,18 @@ theme:
     - content.code.select
     - content.code.annotate
     - navigation.footer
+    - navigation.top
+  font:
+  text: Roboto
+  code: JetBrains Mono
+
   # Dark Mode
   palette:
     - scheme: slate
       toggle:
         icon: material/weather-sunny
         name: Switch to Light Mode
-      primary: black
+      primary: indigo
       accent: indigo
 
   # Light Mode
@@ -24,7 +29,7 @@ theme:
       toggle:
         icon: material/weather-night
         name: Switch to Dark Mode
-      primary: black
+      primary: indigo
       accent: indigo
 
 nav:
@@ -77,3 +82,5 @@ extra:
       link: https://github.com/stencildev
   
   generator: false
+extra_css:
+  - stylesheets/extra.css

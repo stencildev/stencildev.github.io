@@ -1,0 +1,10 @@
+.md-grid {
+  max-width: 1500px;
+}
+
+.md-header {
+  background: linear-gradient(90deg, #1e293b, #334155);
+}
+.md-typeset h1 {
+  font-weight: 600;
+}

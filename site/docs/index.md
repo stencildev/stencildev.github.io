@@ -1,3 +1,8 @@
+---
+hide:
+  - navigation
+  - toc
+---
 # Stencil Dev
 > Infrastructure notes, homelab architecture, and operational runbooks.
 >
