@@ -3,6 +3,7 @@
 This runbook documents a reproducible Traefik deployment pattern for a Docker-based homelab or small self-hosted environment.
 
 Follow this guide exactly. Only modify:
+
 - your domain name
 - your backend service names
 - your Docker network name
@@ -15,6 +16,7 @@ Follow this guide exactly. Only modify:
 Traefik is the reverse proxy and TLS termination layer.
 
 Responsibilities:
+
 - route traffic by hostname
 - terminate TLS
 - apply shared middleware
@@ -358,19 +360,19 @@ http:
 ## Step 9 — Backend Container Requirements
 
 Every backend service must:
+
 - be on the `traefik` network
 - NOT expose ports to host
 - be reachable by container name
 
-Example:
-
-```yaml
-services:
-  example:
-    image: example/app
-    networks:
-      - traefik
-```
+!!! tip "Example:"
+    ```yaml
+    services:
+      example:
+        image: example/app
+        networks:
+          - traefik
+    ```
 
 ---
 
@@ -421,10 +423,11 @@ To add a new app:
 1. Create new file in `dynamic/apps/`
 2. Copy example pattern
 3. Change:
-   - router name
-   - hostname
-   - service name
-   - backend URL
+
+    - router name
+    - hostname
+    - service name
+    - backend URL
 
 Done.
 
@@ -451,6 +454,7 @@ Done.
 ## Summary
 
 This pattern provides:
+
 - modular routing
 - clean separation of config
 - centralized TLS
