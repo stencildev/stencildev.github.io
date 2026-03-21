@@ -46,7 +46,8 @@ nav:
       - Reverse Proxy: homelab/reverse-proxy.md
   - Runbooks: 
       - Overview: runbooks/index.md
-      - Site Deployment Workflow: runbooks/site-deployment.md 
+      - Site Deployment Workflow: runbooks/site-deployment.md
+      - SOPS + age Installation: runbooks/sops-age-installation.md
       - Traefik Deployment: runbooks/traefik-deployment.md
   - Contact: contact.md
 
